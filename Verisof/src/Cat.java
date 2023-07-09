@@ -1,8 +1,8 @@
-
+﻿
 public class Cat extends Animal implements ILand {
 	
 	//field
-	private final int numberOfLegs;//האם זה נכון לעשות את זה פינל
+	private final int numberOfLegs;
 	
 	//c-tor
 	public Cat(boolean mammals, boolean carnivorous, int mood) {

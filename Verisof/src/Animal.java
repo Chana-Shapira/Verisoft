@@ -1,4 +1,4 @@
-
+﻿
 public abstract class Animal {
 	
 	//fields
@@ -9,13 +9,13 @@ public abstract class Animal {
 	private int mood;
 	
 	//c-tor
-	public Animal(boolean mammals, boolean carnivorous, int mood) {//האם להוריד את הפאבליק
+	public Animal(boolean mammals, boolean carnivorous, int mood) {
 		this.mammals=mammals;
 		this.carnivorous=carnivorous; 
 		this.mood=mood;
 	}
 	
-	public void sayHello() {//הזאת בפונקציה לעשות מה
+	public void sayHello() {
 	}
 	
 	public abstract void sayHello(int mood);

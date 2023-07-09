@@ -12,12 +12,16 @@ public class TestAnimal {
 			animal.sayHello();
 			System.out.println("Is the "+animal.getClass().getName()+" a mammal?\n"+animal.isMammals());
 			System.out.println("Is the "+animal.getClass().getName()+" carnivorous?\n"+animal.isCarnivorous());
+			if(animal instanceof ILand) {
+				ILand l=(ILand)animal;
+				System.out.println("How many legs does a "+animal.getClass().getName()+" have? "+c.getNumberOfLegs());
+			}
 			if(animal instanceof IWater) {
 				IWater w=(IWater)animal;
 				System.out.println("Can a "+animal.getClass().getName()+" lay eggs?\n"+w.hasLaysEggs());
 				System.out.println("Does a"+animal.getClass().getName()+" have gills?\n"+w.hasGills());
 			}
-			System.out.println("-------------------------");
+			System.out.println("----------------------------------");
 		}
 
 	}
